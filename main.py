@@ -25,8 +25,6 @@ maxHe = (height - gridsize) // gridsize
 maxWi = (width - gridsize) // gridsize
 x,y = 30,10
 dead = True
-idle = pygame.image.load("6.png").convert()
-run_cycle = [pygame.image.load("2.png").convert(),pygame.image.load("3.png").convert(),pygame.image.load("4.png").convert()]
 lx = 10
 ly = 10
 def Clacultae(maxHe,maxWi,xpos,ypos,static,blocks):
@@ -90,7 +88,6 @@ while True:
                                 pygame.draw.rect(win,(107,109,0),(i[0] * gridsize,i[1]*gridsize,gridsize,gridsize))
         if i[2] == 2:
              pygame.draw.rect(win,(107,109,0),(i[0] * gridsize,i[1]*gridsize,gridsize,gridsize))
-    win.blit(idle,(x*gridsize,y*gridsize))
     pygame.display.flip()
     clock.tick(1000000000000000000)
 
